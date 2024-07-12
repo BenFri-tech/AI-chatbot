@@ -3,6 +3,7 @@
 .app{
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
   margin: 0 ;
 }
 .main-part {
-  width: 1228px;
+  width: 80%;
   border-radius: var(--Spacing-8, 8px);
   background: rgba(255, 255, 255, 0.72);
   box-shadow: 0px 2px 4px 0px rgba(45, 64, 83, 0.08), 0px 0px 0px 1px rgba(45, 64, 83, 0.04);
@@ -24,22 +25,24 @@ body{
 
 .sidebar{
   display: flex;
-  width: 260px;
-  padding-top: 16px;
+  padding-top: 1%;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 2%;
   background: #E8D7F5;
   overflow-y: auto; 
+  overflow-x: hidden;
+  min-width: 200px;
+  width: 20%;
 }
 
 
 
 .new-chat-button{
   height:41px;
-  width:212px;
+  width:80%;
   display: flex;
-  padding: 12px;
+  padding: 1%;
   justify-content: flex-start;
   gap: 4px;
   border-radius: 8px;
@@ -79,7 +82,7 @@ body{
 }
 
 .today-line{
-  width:212px;
+  width:100%;
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -101,13 +104,9 @@ body{
   border:none;
 }
 
-p{
-  display: flex;
-  align-items: center;
-}
 
 #input-container{
-  width: 98%;
+  width: 80%;
   height: 60px;
   border: none;
   background: #E8D7F5;
@@ -117,6 +116,9 @@ p{
   position: absolute;
   bottom: 2px;
   justify-content: space-around;
+  transform: translate(-50%);
+  left: 50%;
+  
 }
 
 .enter{
@@ -150,7 +152,6 @@ p{
 
 .answers-container{
   background: #f1e5f9;
-  width: 70%;
   height: 70%;
   border-radius: 17px;
   margin: auto 100px 50px 200px;
